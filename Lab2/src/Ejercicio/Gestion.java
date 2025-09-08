@@ -67,6 +67,8 @@ class Gestion {
 		System.out.println("---------------------");
 		Persona.mostrarTotalPersonas();
 		
+		
+		
 		/*
 		e1.mostrarInfo();
 		System.out.println("----------------------------------------------------");

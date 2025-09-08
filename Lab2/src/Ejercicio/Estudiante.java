@@ -5,12 +5,14 @@ class Estudiante extends Persona{
 	private String[] cursosInscritos;
 	private int cantidadCursos;
 	public static final int maxCursos = 6;
+	protected static int totalEstudiantes = 0;
 	
 	public Estudiante(String nombre, String apellido, String dni, int edad, String codigoEstudiante) {
 		super(nombre, apellido, dni, edad);
 		this.codigoEstudiante = codigoEstudiante;
 		this.cursosInscritos = new String[maxCursos];
 		this.cantidadCursos = 0;
+		totalEstudiantes++;
 	}
 	
 	@Override
@@ -32,6 +34,10 @@ class Estudiante extends Persona{
 		super.mostrarInfo();
 		System.out.println("Código de estudiante: "+codigoEstudiante);
 		System.out.println("Cursos inscritos: "+cantidadCursos);
+	}
+	
+	public static void mostrarTotalEstudiantes() {
+		System.out.println("El total de estudiantes es : "+totalEstudiantes);
 	}
 	
 	public static void main(String[] args) {
