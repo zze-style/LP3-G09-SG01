@@ -1,0 +1,5 @@
+Número de cuenta: 002
+Titular: Luis
+Saldo actual: 500.0
+----------
+Reporte generado exitosamente
