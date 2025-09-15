@@ -15,10 +15,10 @@ public class Main {
         }
 
         try {
-            String encontrado = registro.buscarEstudiante("Ana");
+            String encontrado = registro.buscarEstudiante("Luis");
             System.out.println("Estudiante encontrado: " + encontrado);
 
-            registro.buscarEstudiante("Luis");
+            registro.buscarEstudiante("Maria");
         } catch (NoSuchElementException e) {
             System.out.println("Error al buscar: " + e.getMessage());
         }

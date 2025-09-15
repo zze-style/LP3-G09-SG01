@@ -10,7 +10,7 @@ public class RegistroEstudiantes {
 		contador = 0;
 	}
 	
-	
+
 	public void agregarEstudiante(String nombre) {
 		if (nombre == null || nombre.trim().isEmpty()) {
 			throw new IllegalArgumentException("El nombre no puede estar vacío");
