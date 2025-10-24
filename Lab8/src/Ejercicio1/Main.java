@@ -136,7 +136,7 @@ public class Main {
 
                     case 6:
                         salir = true;
-                        System.out.println("Saliendo del programa...");
+                        System.out.println("Saliendo del programa.");
                         break;
 
                     default:

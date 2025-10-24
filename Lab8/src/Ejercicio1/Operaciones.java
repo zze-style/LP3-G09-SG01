@@ -51,7 +51,7 @@ public class Operaciones {
              Statement stmt = conn.createStatement();
              ResultSet rs = stmt.executeQuery(sql)) {
 
-            System.out.println("\n--- LISTA DE PRODUCTOS ---");
+            System.out.println("\n-LISTA DE PRODUCTO-");
             while (rs.next()) {
                 System.out.println("ID: " + rs.getInt("id") +
                                    ", Nombre: " + rs.getString("nombre") +
@@ -117,10 +117,10 @@ public class Operaciones {
         String clave = sc.nextLine();
         if (clave.equals("1234")) {
             conn.commit();
-            System.out.println("✅ Operación confirmada.");
+            System.out.println("Operación confirmada.");
         } else {
             conn.rollback();
-            System.out.println("❌ Clave incorrecta. Cambios revertidos.");
+            System.out.println("Clave incorrecta. Cambios revertidos.");
         }
     }
 }
