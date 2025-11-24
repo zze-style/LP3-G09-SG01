@@ -41,7 +41,7 @@ public class ReproductorMusica extends JFrame implements ActionListener {
         setLocationRelativeTo(null);
         setVisible(true);
 
-        cargarAudio("C:\\Users\\Sebastian\\eclipse-workspace\\Lab10FX\\src\\Ejercicio4\\musica.wav");
+        cargarAudio("C:\\Users\\Sebastian\\git\\LP3\\Lab10FX\\src\\Ejercicio4\\musica.wav");
     }
 
     private void cargarAudio(String filePath) {
